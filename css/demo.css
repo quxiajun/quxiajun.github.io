@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.boxContent {
+    position: relative;
+}
+.box {
+    float: left;
+    padding: 10px;
+}
+.box img {
+    width: 220px;
+    border-radius: 5%;
+}
+
+.waterfall h2 {
+    margin: 30px 0;
+    text-align: center;
+}
+.boxContent::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.box:hover img {
+    opacity: .5;
+    transform: translateY(2px);
+}
